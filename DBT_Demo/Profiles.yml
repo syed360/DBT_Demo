@@ -1,0 +1,38 @@
+
+DBT_Demo:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: deputy
+      port: 5434
+      dbname: postgres
+      schema: public
+      threads: 1
+      connect_timeout: 30
+# my_secondProject:
+#   outputs:
+
+#     dev:
+#       type: postgres
+#       threads: 1
+#       host: "localhost"
+#       port: 5434
+#       user: postgres
+#       pass: deputy
+#       dbname: "postgres"
+#       schema: "public"
+
+    # prod:
+    #   type: postgres
+    #   threads: [1 or more]
+    #   host: [host]
+    #   port: [port]
+    #   user: [prod_username]
+    #   pass: [prod_password]
+    #   dbname: [dbname]
+    #   schema: [prod_schema]
+
+  target: dev
