@@ -1,38 +1,17 @@
-
-DBT_Demo:
-  target: dev
+snowflake:
+  target: devs # target.schema comes from is set as defaul for tables with not macro to guide them
   outputs:
-    dev:
-      type: postgres
-      host: localhost
-      user: postgres
-      password: deputy
-      port: 5434
-      dbname: postgres
-      schema: public
-      threads: 1
-      connect_timeout: 30
-# my_secondProject:
-#   outputs:
+    devs:
+      type: snowflake
+      account: jruypvj-ef97579
 
-#     dev:
-#       type: postgres
-#       threads: 1
-#       host: "localhost"
-#       port: 5434
-#       user: postgres
-#       pass: deputy
-#       dbname: "postgres"
-#       schema: "public"
+      # User/password auth
+      user: SyedALi
+      password: Deputy@321
 
-    # prod:
-    #   type: postgres
-    #   threads: [1 or more]
-    #   host: [host]
-    #   port: [port]
-    #   user: [prod_username]
-    #   pass: [prod_password]
-    #   dbname: [dbname]
-    #   schema: [prod_schema]
-
-  target: dev
+      role: ACCOUNTADMIN
+      database: DEMO_DB
+      warehouse: COMPUTE_WH
+      schema: PUBLIC
+      threads: 10
+      client_session_keep_alive: False

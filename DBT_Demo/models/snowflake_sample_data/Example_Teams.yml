@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: example_teams
+    description: >
+      A list of NBA teams in 2020
+    columns:
+      - name: team
+        description: "The name of the team."
+      - name: city
+        description: "The City of the team."
+        tests:
+          - is_la_teams
+      - name: state
+        description: "The state of the team."
