@@ -3,10 +3,11 @@ sources:
   - name: demo_source
     database: demo_db
     schema: staging
+
     freshness:
       warn_after: {count: 12, period: minute}
       error_after: {count: 14, period: minute}
-      
+
     loaded_at_field: created_at
 
     tables:
@@ -16,3 +17,7 @@ sources:
           - name: id
           - name: name
           - name: created_at
+      - name: my_fav_model2
+        description: 'I know'
+        columns:
+          - name: id

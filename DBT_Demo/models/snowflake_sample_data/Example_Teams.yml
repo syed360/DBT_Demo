@@ -3,12 +3,15 @@ models:
   - name: example_teams
     description: >
       A list of NBA teams in 2020
+      
     columns:
       - name: team
-        description: "The name of the team."
+        description: '{{doc('team_name')}}'
+
       - name: city
-        description: "The City of the team."
+        description: '{{doc('team_city')}}'
         tests:
           - is_la_teams
+          
       - name: state
-        description: "The state of the team."
+        description: '{{doc('team_state')}}'
