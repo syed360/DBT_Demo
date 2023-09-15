@@ -1,4 +1,4 @@
-
+# This Yml is to extract the data from the snowflake 
 version: 2
 
 sources:
@@ -9,3 +9,4 @@ sources:
     tables :
       - name : store_sales
         description : 'details about sales in the store'
+
