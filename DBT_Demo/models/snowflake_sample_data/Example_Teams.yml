@@ -6,12 +6,12 @@ models:
       
     columns:
       - name: team
-        description: '{{doc('team_name')}}'
+        description: "{{doc('team_name')}}"
 
       - name: city
-        description: '{{doc('team_city')}}'
+        description: "{{doc('team_city')}}"
         tests:
           - is_la_teams
           
       - name: state
-        description: '{{doc('team_state')}}'
+        description: "{{doc('team_state')}}"
