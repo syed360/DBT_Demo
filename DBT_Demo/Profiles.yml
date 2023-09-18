@@ -1,7 +1,22 @@
 snowflake:
-  target: devs # target.schema comes from is set as defaul for tables with not macro to guide them
+  target: dev # target.schema comes from is set as defaul for tables with not macro to guide them
   outputs:
-    devs:
+    dev:
+      type: snowflake
+      account: jruypvj-ef97579
+
+      # User/password auth
+      user: SyedALi
+      password: Deputy@321
+
+      role: ACCOUNTADMIN
+      database: DEMO_DB
+      warehouse: COMPUTE_WH
+      schema: STAGING
+      threads: 10
+      client_session_keep_alive: False
+
+    prod:
       type: snowflake
       account: jruypvj-ef97579
 

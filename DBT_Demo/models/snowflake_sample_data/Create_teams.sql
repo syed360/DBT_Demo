@@ -1,3 +1,7 @@
+{{  config(
+    materialized = 'ephemeral'
+    ) }}
+
 with source_data as (Select 'Lakers' as TEAM
 union all 
 select 'Clippers' as TEAM

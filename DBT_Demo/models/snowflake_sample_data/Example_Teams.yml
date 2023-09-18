@@ -15,3 +15,12 @@ models:
           
       - name: state
         description: "{{doc('team_state')}}"
+    
+  - name: artist_data
+    description: >
+      Artist data in json
+      
+    columns:
+      - name: ARTIST_DATA
+        description: "You already know"
+        data_type: variant

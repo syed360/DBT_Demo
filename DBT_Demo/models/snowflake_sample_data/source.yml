@@ -9,4 +9,11 @@ sources:
     tables :
       - name : store_sales
         description : 'details about sales in the store'
+  - name: artist_source
+    description: 'Am artist database'
+    database : DEMO_DB
+    schema : staging
+    tables :
+      - name : artist_data
+        description : 'details about artist_data'
 
