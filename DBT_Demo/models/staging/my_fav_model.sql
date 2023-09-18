@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', tags = ["special"]) }}
 
 WITH source_data as (
     SELECT 

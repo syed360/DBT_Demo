@@ -6,12 +6,21 @@ models:
       
     columns:
       - name: team
-        description: '{{doc('team_name')}}'
+        description: "{{doc('team_name')}}"
 
       - name: city
-        description: '{{doc('team_city')}}'
+        description: "{{doc('team_city')}}"
         tests:
           - is_la_teams
           
       - name: state
-        description: '{{doc('team_state')}}'
+        description: "{{doc('team_state')}}"
+    
+  - name: artist_data
+    description: >
+      Artist data in json
+      
+    columns:
+      - name: ARTIST_DATA
+        description: "You already know"
+        data_type: variant
