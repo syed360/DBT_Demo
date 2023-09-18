@@ -2,3 +2,4 @@
 target/
 dbt_packages/
 logs/
+DBT_DEMO/.venv1/
